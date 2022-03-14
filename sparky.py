@@ -11,6 +11,9 @@ ALTURA_RUEDA = 1
 
 def unirObjetos():
     bpy.ops.object.join()
+    
+def deseleccionarObjetos(): # Seleccionar un objeto por su nombre
+    bpy.ops.object.select_all(action='DESELECT')
 
 def seleccionarObjeto(nombreObjeto): # Seleccionar un objeto por su nombre
     bpy.data.objects[nombreObjeto].select_set(True)
@@ -150,7 +153,7 @@ if __name__ == "__main__":
     Activo.rotar((0, 0, 3.1415 / 3))
     Activo.escalar((1, 3, 1))"""
     
-    borrarObjetos();
+    borrarObjetos()
     
     Objeto.crearTorus("R11")
     Seleccionado.rotarX(PI/2)
@@ -268,6 +271,24 @@ if __name__ == "__main__":
     Activo.posicionar((-1,0,2.4))
     Activo.escalar((1,0.9,0.7))
     Seleccionado.rotarX(PI/2)
+    
+    Objeto.crearCubo("X1")
+    Activo.posicionar((0.5,0,1.6))
+    Activo.escalar((3,0.2,3))
+    Seleccionado.rotarX(PI/4)
+    
+    Objeto.crearCubo("X2")
+    Activo.posicionar((0.5,0,1.6))
+    Activo.escalar((3,0.2,3))
+    Seleccionado.rotarX(-PI/4)
+    
+    seleccionarObjeto("X1")
+    seleccionarObjeto("X2")
+    unirObjetos()
+    
+    deseleccionarObjeto()
+    
+    
     
     
     
