@@ -119,6 +119,10 @@ class Objeto:
     def crearIcoesfera(objName):
         bpy.ops.mesh.primitive_ico_sphere_add(radius=1, enter_editmode=False, location=(0, 0, 0))
         Activo.renombrar(objName)
+        
+    def crearTorus(objName):
+        bpy.ops.mesh.primitive_torus_add(align='WORLD', location=(0, 0, 0), rotation=(0, 0, 0), major_radius=1, minor_radius=0.25, abso_major_rad=1.25, abso_minor_rad=0.75)
+        Activo.renombrar(objName)
 
 
 '''************'''
@@ -148,9 +152,9 @@ if __name__ == "__main__":
     
     borrarObjetos();
     
-    Objeto.crearCilindro("R11")
+    Objeto.crearTorus("R11")
     Seleccionado.rotarX(PI/2)
-    Activo.encoger(ENCOGER_RUEDA)
+    Activo.escalar((0.8,0.8,0.6))
     Activo.posicionar((0,1.65,ALTURA_RUEDA))
     
     Objeto.crearCilindro("R12")
@@ -171,9 +175,9 @@ if __name__ == "__main__":
     unirObjetos()
     
     
-    Objeto.crearCilindro("R21")
+    Objeto.crearTorus("R21")
     Seleccionado.rotarX(PI/2)
-    Activo.encoger(ENCOGER_RUEDA)
+    Activo.escalar((0.8,0.8,0.6))
     Activo.posicionar((0,-1.65,ALTURA_RUEDA))
     
     Objeto.crearCilindro("R22")
@@ -195,12 +199,12 @@ if __name__ == "__main__":
     
     
     Objeto.crearCubo("C1")
-    Activo.escalar((4,4,4))
+    Activo.escalar((3.8,3.8,3.8))
     Activo.encoger((1.25,1,1))
     Activo.posicionar((0,0,1.5))
     
     Objeto.crearCubo("C2")
-    Activo.escalar((4,4,4))
+    Activo.escalar((3.8,3.8,3.8))
     Activo.encoger((1,1.25,1))
     Activo.posicionar((0,0,1.5))
     
@@ -217,12 +221,54 @@ if __name__ == "__main__":
     Activo.escalar((1.35,1,1))
     
     Objeto.crearIcoesfera("L3")
-    Activo.posicionar((1.7,0,3.1))
-    Activo.escalar((1.75,1,0.8))
+    Activo.posicionar((1.5,0,3.1))
+    Activo.escalar((1.75,0.7,0.8))
     
     seleccionarObjeto("L1")
     seleccionarObjeto("L2")
     seleccionarObjeto("L3")
     unirObjetos()
+    
+    Objeto.crearCubo("B1")
+    Activo.posicionar((0.1,0,3.9))
+    
+    Objeto.crearTorus("T1")
+    Activo.posicionar((2.25,0,3.15))
+    Activo.escalar((0.8,0.8,0.8))
+    Seleccionado.rotarY(PI/2)
+    
+    Objeto.crearTorus("T2")
+    Activo.posicionar((2.5,0,3.15))
+    Activo.escalar((0.7,0.7,0.7))
+    Seleccionado.rotarY(PI/2)
+    
+    Objeto.crearTorus("T3")
+    Activo.posicionar((2.75,0,3.15))
+    Activo.escalar((0.6,0.6,0.6))
+    Seleccionado.rotarY(PI/2)
+    
+    Objeto.crearTorus("T4")
+    Activo.posicionar((2.95,0,3.15))
+    Activo.escalar((0.45,0.45,0.45))
+    Seleccionado.rotarY(PI/2)
+    
+    Objeto.crearTorus("T5")
+    Activo.posicionar((3.1,0,3.15))
+    Activo.escalar((0.4,0.4,0.4))
+    Seleccionado.rotarY(PI/2)
+    
+    seleccionarObjeto("T1")
+    seleccionarObjeto("T2")
+    seleccionarObjeto("T3")
+    seleccionarObjeto("T4")
+    seleccionarObjeto("T5")
+    unirObjetos()
+    
+    Objeto.crearTorus("S1")
+    Activo.posicionar((-1,0,2.4))
+    Activo.escalar((1,0.9,0.7))
+    Seleccionado.rotarX(PI/2)
+    
+    
     
     
