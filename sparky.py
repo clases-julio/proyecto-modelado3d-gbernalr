@@ -135,6 +135,8 @@ if __name__ == "__main__":
     # Creación de un cubo y transformaciones de este:
     
     borrarObjetos()
+
+    """RUEDA IZQUIERDA"""
     
     Objeto.crearTorus("R11")
     Seleccionado.rotarX(PI/2)
@@ -168,7 +170,8 @@ if __name__ == "__main__":
     seleccionarObjeto("R14")
     unirObjetos()
     
-    
+    """RUEDA DERECHA"""
+
     Objeto.crearTorus("R21")
     Seleccionado.rotarX(PI/2)
     Activo.escalar((0.8,0.8,0.6))
@@ -200,7 +203,9 @@ if __name__ == "__main__":
     seleccionarObjeto("R24")
     unirObjetos()
     
-    
+    """CUERPO"""
+
+
     Objeto.crearCubo("C1")
     Activo.escalar((3.8,3.8,3.8))
     Activo.encoger((1.25,1,0.3))
@@ -221,6 +226,7 @@ if __name__ == "__main__":
     seleccionarObjeto("C3")
     unirObjetos()
     
+    """CANON"""
     
     Objeto.crearIcoesfera("L1")
     Activo.posicionar((0.2,0,3.1))
@@ -237,6 +243,8 @@ if __name__ == "__main__":
     seleccionarObjeto("L2")
     seleccionarObjeto("L3")
     unirObjetos()
+
+    """AROS"""
     
     Objeto.crearCubo("B1")
     Activo.posicionar((0.1,0,3.9))
@@ -272,6 +280,8 @@ if __name__ == "__main__":
     seleccionarObjeto("T4")
     seleccionarObjeto("T5")
     unirObjetos()
+
+    """BANDERA"""
     
     Objeto.crearCilindro("PB1")
     Activo.posicionar((-0.85,1,3.95))
@@ -285,6 +295,7 @@ if __name__ == "__main__":
     Activo.posicionar((-2.2,1,5.25))
     Activo.escalar((6,0.05,2))
     
+    """CAMARA"""
     
     Objeto.crearCubo("H1")
     Seleccionado.rotarY(-PI/4)
