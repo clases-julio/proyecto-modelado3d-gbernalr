@@ -290,18 +290,6 @@ if __name__ == "__main__":
     Activo.posicionar((-2.2,1,5.45))
     Activo.escalar((6,0.05,1.25))
     
-    Objeto.crearCilindro("E1")
-    Seleccionado.rotarY(PI/2)
-    Activo.posicionar((-1.8,-0.5,0.8))
-    Activo.escalar((0.3,0.3,0.6))
-    
-    Objeto.crearCilindro("E1")
-    Seleccionado.rotarY(PI/4)
-    Activo.posicionar((-2.7,-0.5,1.2))
-    Activo.escalar((0.3,0.3,0.6))
-    
-    
-    
     Objeto.crearCubo("X1")
     Activo.posicionar((0.5,0,1.6))
     Activo.escalar((3,0.2,3))
@@ -315,6 +303,31 @@ if __name__ == "__main__":
     seleccionarObjeto("X1")
     seleccionarObjeto("X2")
     unirObjetos()
+    
+    Objeto.crearCubo("H1")
+    Seleccionado.rotarY(-PI/4)
+    Activo.posicionar((0.2,0,4.3))
+    Activo.escalar((0.4,0.8,1))
+    
+    Objeto.crearCilindro("H2")
+    Activo.posicionar((0.4,0,4.5))
+    Activo.escalar((0.12,0.3,0.2))
+    Seleccionado.rotarY(-PI/2)
+    
+    Objeto.crearTorus("H3")
+    Activo.posicionar((0.6,0.05,4.5))
+    Activo.escalar((0.06,0.06,0.1))
+    Seleccionado.rotarY(-PI/2)
+    
+    Objeto.crearTorus("H4")
+    Activo.posicionar((0.6,-0.15,4.5))
+    Activo.escalar((0.03,0.03,0.1))
+    Seleccionado.rotarY(-PI/2)
+    
+    Objeto.crearTorus("H5")
+    Activo.posicionar((0.6,0.05,4.5))
+    Activo.escalar((0.02,0.02,0.1))
+    Seleccionado.rotarY(-PI/2)
     
     
     
