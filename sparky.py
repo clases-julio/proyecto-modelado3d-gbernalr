@@ -149,14 +149,14 @@ if __name__ == "__main__":
     Objeto.crearCilindro("R13")
     Seleccionado.rotarX(PI/2)
     Activo.encoger(ENCOGER_RUEDA)
-    Activo.encoger((0.35,0.75,0.35))
+    Activo.encoger((0.35,1,0.35))
     Activo.posicionar((0,1.8,ALTURA_RUEDA))
     
     
     Objeto.crearCilindro("R14")
     Seleccionado.rotarX(PI/2)
     Activo.encoger(ENCOGER_RUEDA)
-    Activo.encoger((0.1,7,0.1))
+    Activo.encoger((0.1,5,0.1))
     Activo.posicionar((0,1.5,ALTURA_RUEDA))
 
     
@@ -182,19 +182,22 @@ if __name__ == "__main__":
     Objeto.crearCilindro("R23")
     Seleccionado.rotarX(PI/2)
     Activo.encoger(ENCOGER_RUEDA)
-    Activo.encoger((0.35,0.75,0.35))
+    Activo.encoger((0.35,1,0.35))
     Activo.posicionar((0,-1.8,ALTURA_RUEDA))
     
-    Objeto.crearCilindro("R14")
+    Objeto.crearCilindro("R24")
     Seleccionado.rotarX(PI/2)
     Activo.encoger(ENCOGER_RUEDA)
-    Activo.encoger((0.1,7,0.1))
+    Activo.encoger((0.1,5,0.1))
     Activo.posicionar((0,-1.5,ALTURA_RUEDA))
 
     
     seleccionarObjeto("R21")
-    seleccionarObjeto("R22")
     seleccionarObjeto("R23")
+    unirObjetos()
+    
+    seleccionarObjeto("R22")
+    seleccionarObjeto("R24")
     unirObjetos()
     
     
