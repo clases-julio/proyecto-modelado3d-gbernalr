@@ -139,40 +139,56 @@ if __name__ == "__main__":
     Objeto.crearTorus("R11")
     Seleccionado.rotarX(PI/2)
     Activo.escalar((0.8,0.8,0.6))
-    Activo.posicionar((0,1.65,ALTURA_RUEDA))
+    Activo.posicionar((0,1.8,ALTURA_RUEDA))
     
     Objeto.crearCilindro("R12")
     Seleccionado.rotarX(PI/2)
     Activo.encoger(ENCOGER_RUEDA)
-    Activo.posicionar((0,1.35,ALTURA_RUEDA))
+    Activo.posicionar((0,1.65,ALTURA_RUEDA))
     
     Objeto.crearCilindro("R13")
     Seleccionado.rotarX(PI/2)
     Activo.encoger(ENCOGER_RUEDA)
-    Activo.encoger((0.75,0.75,0.75))
+    Activo.encoger((0.35,0.75,0.35))
+    Activo.posicionar((0,1.8,ALTURA_RUEDA))
+    
+    
+    Objeto.crearCilindro("R14")
+    Seleccionado.rotarX(PI/2)
+    Activo.encoger(ENCOGER_RUEDA)
+    Activo.encoger((0.1,7,0.1))
     Activo.posicionar((0,1.5,ALTURA_RUEDA))
 
     
     seleccionarObjeto("R11")
-    seleccionarObjeto("R12")
     seleccionarObjeto("R13")
+    unirObjetos()
+    
+    seleccionarObjeto("R12")
+    seleccionarObjeto("R14")
     unirObjetos()
     
     
     Objeto.crearTorus("R21")
     Seleccionado.rotarX(PI/2)
     Activo.escalar((0.8,0.8,0.6))
-    Activo.posicionar((0,-1.65,ALTURA_RUEDA))
+    Activo.posicionar((0,-1.8,ALTURA_RUEDA))
     
     Objeto.crearCilindro("R22")
     Seleccionado.rotarX(PI/2)
     Activo.encoger(ENCOGER_RUEDA)
-    Activo.posicionar((0,-1.35,ALTURA_RUEDA))
+    Activo.posicionar((0,-1.65,ALTURA_RUEDA))
     
     Objeto.crearCilindro("R23")
     Seleccionado.rotarX(PI/2)
     Activo.encoger(ENCOGER_RUEDA)
-    Activo.encoger((0.75,0.75,0.75))
+    Activo.encoger((0.35,0.75,0.35))
+    Activo.posicionar((0,-1.8,ALTURA_RUEDA))
+    
+    Objeto.crearCilindro("R14")
+    Seleccionado.rotarX(PI/2)
+    Activo.encoger(ENCOGER_RUEDA)
+    Activo.encoger((0.1,7,0.1))
     Activo.posicionar((0,-1.5,ALTURA_RUEDA))
 
     
@@ -184,16 +200,22 @@ if __name__ == "__main__":
     
     Objeto.crearCubo("C1")
     Activo.escalar((3.8,3.8,3.8))
-    Activo.encoger((1.25,1,1))
-    Activo.posicionar((0,0,1.5))
+    Activo.encoger((1.25,1,0.3))
+    Activo.posicionar((0,0,1.15))
     
     Objeto.crearCubo("C2")
     Activo.escalar((3.8,3.8,3.8))
-    Activo.encoger((1,1.25,1))
-    Activo.posicionar((0,0,1.5))
+    Activo.encoger((1,1.25,0.3))
+    Activo.posicionar((0,0,1.15))
+    
+    Objeto.crearCubo("C3")
+    Activo.escalar((3.8,3.8,3.8))
+    Activo.encoger((0.95,0.7,0.4))
+    Activo.posicionar((0,0,1.75))
     
     seleccionarObjeto("C1")
     seleccionarObjeto("C2")
+    seleccionarObjeto("C3")
     unirObjetos()
     
     
@@ -250,7 +272,7 @@ if __name__ == "__main__":
     
     Objeto.crearCilindro("PB1")
     Activo.posicionar((-0.85,1,3.95))
-    Activo.escalar((0.05,0.05,2))
+    Activo.escalar((0.05,0.05,2.5))
     
     Objeto.crearCubo("B1")
     Activo.posicionar((-2.2,1,4.25))
@@ -260,19 +282,6 @@ if __name__ == "__main__":
     Activo.posicionar((-2.2,1,5.25))
     Activo.escalar((6,0.05,2))
     
-    Objeto.crearCubo("X1")
-    Activo.posicionar((0.5,0,1.6))
-    Activo.escalar((3,0.2,3))
-    Seleccionado.rotarX(PI/4)
-    
-    Objeto.crearCubo("X2")
-    Activo.posicionar((0.5,0,1.6))
-    Activo.escalar((3,0.2,3))
-    Seleccionado.rotarX(-PI/4)
-    
-    seleccionarObjeto("X1")
-    seleccionarObjeto("X2")
-    unirObjetos()
     
     Objeto.crearCubo("H1")
     Seleccionado.rotarY(-PI/4)
