@@ -133,25 +133,6 @@ class Objeto:
 '''************'''
 if __name__ == "__main__":
     # Creación de un cubo y transformaciones de este:
-    """
-    Objeto.crearCubo('MiCubo')
-    Seleccionado.mover((0, 1, 2))
-    Seleccionado.escalar((1, 1, 2))
-    Seleccionado.escalar((0.5, 1, 1))
-    Seleccionado.rotarX(3.1415 / 8)
-    Seleccionado.rotarX(3.1415 / 7)
-    Seleccionado.rotarZ(3.1415 / 3)
-
-    # Creación de un cono y transformaciones de este:
-    Objeto.crearCono('MiCono')
-    Activo.posicionar((-2, -2, 0))
-    Especifico.escalar('MiCono', (1.5, 2.5, 2))
-
-    # Creación de una esfera y transformaciones de esta:
-    Objeto.crearEsfera('MiEsfera')
-    Especifico.posicionar('MiEsfera', (2, 0, 0))
-    Activo.rotar((0, 0, 3.1415 / 3))
-    Activo.escalar((1, 3, 1))"""
     
     borrarObjetos()
     
@@ -266,13 +247,6 @@ if __name__ == "__main__":
     seleccionarObjeto("T4")
     seleccionarObjeto("T5")
     unirObjetos()
-    
-    """
-    Objeto.crearTorus("S1")
-    Activo.posicionar((-1,0,2.4))
-    Activo.escalar((1,0.9,0.7))
-    Seleccionado.rotarX(PI/2)
-    """
     
     Objeto.crearCilindro("PB1")
     Activo.posicionar((-0.85,1,3.95))
