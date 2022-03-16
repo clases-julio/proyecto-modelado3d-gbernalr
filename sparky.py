@@ -267,10 +267,40 @@ if __name__ == "__main__":
     seleccionarObjeto("T5")
     unirObjetos()
     
+    """
     Objeto.crearTorus("S1")
     Activo.posicionar((-1,0,2.4))
     Activo.escalar((1,0.9,0.7))
     Seleccionado.rotarX(PI/2)
+    """
+    
+    Objeto.crearCilindro("PB1")
+    Activo.posicionar((-0.85,1,3.95))
+    Activo.escalar((0.05,0.05,2))
+    
+    Objeto.crearCubo("B1")
+    Activo.posicionar((-2.2,1,4.25))
+    Activo.escalar((6,0.05,1.25))
+    
+    Objeto.crearCubo("B2")
+    Activo.posicionar((-2.2,1,4.85))
+    Activo.escalar((6,0.05,1.25))
+    
+    Objeto.crearCubo("B3")
+    Activo.posicionar((-2.2,1,5.45))
+    Activo.escalar((6,0.05,1.25))
+    
+    Objeto.crearCilindro("E1")
+    Seleccionado.rotarY(PI/2)
+    Activo.posicionar((-1.8,-0.5,0.8))
+    Activo.escalar((0.3,0.3,0.6))
+    
+    Objeto.crearCilindro("E1")
+    Seleccionado.rotarY(PI/4)
+    Activo.posicionar((-2.7,-0.5,1.2))
+    Activo.escalar((0.3,0.3,0.6))
+    
+    
     
     Objeto.crearCubo("X1")
     Activo.posicionar((0.5,0,1.6))
@@ -285,8 +315,6 @@ if __name__ == "__main__":
     seleccionarObjeto("X1")
     seleccionarObjeto("X2")
     unirObjetos()
-    
-    deseleccionarObjeto()
     
     
     
