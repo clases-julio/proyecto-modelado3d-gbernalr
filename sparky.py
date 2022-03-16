@@ -280,15 +280,11 @@ if __name__ == "__main__":
     
     Objeto.crearCubo("B1")
     Activo.posicionar((-2.2,1,4.25))
-    Activo.escalar((6,0.05,1.25))
+    Activo.escalar((6,0.05,2))
     
     Objeto.crearCubo("B2")
-    Activo.posicionar((-2.2,1,4.85))
-    Activo.escalar((6,0.05,1.25))
-    
-    Objeto.crearCubo("B3")
-    Activo.posicionar((-2.2,1,5.45))
-    Activo.escalar((6,0.05,1.25))
+    Activo.posicionar((-2.2,1,5.25))
+    Activo.escalar((6,0.05,2))
     
     Objeto.crearCubo("X1")
     Activo.posicionar((0.5,0,1.6))
@@ -328,7 +324,6 @@ if __name__ == "__main__":
     Activo.posicionar((0.6,0.05,4.5))
     Activo.escalar((0.02,0.02,0.1))
     Seleccionado.rotarY(-PI/2)
-    
     
     
     
